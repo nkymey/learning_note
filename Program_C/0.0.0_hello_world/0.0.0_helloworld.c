@@ -3,6 +3,6 @@
 
 void print_hello(void)
 {
-	printf("Hello! Nice to meet you.\n");
+	lk_print("Hello! Nice to meet you.\n");
 }
 

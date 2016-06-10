@@ -1,4 +1,5 @@
 *.bak
 *.o
 app_test
+*.exe
 *~

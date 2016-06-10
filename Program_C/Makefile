@@ -27,4 +27,5 @@ build_app:
 
 clean:
 	@find . -name *.o | xargs rm -rf
+	@find . -name *.exe | xargs rm -rf
 	@find . -name $(BIN) | xargs rm -rf
