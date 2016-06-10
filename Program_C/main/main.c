@@ -4,6 +4,7 @@
 #include "1.3.1_keyword_static.h"
 #include "1.4.0_keyword_unsigned.h"
 #include "1.5.2_keyword_sizeof.h"
+#include "1.6.0_keyword_ifelse.h"
 
 int main(void)
 {
@@ -11,7 +12,8 @@ int main(void)
 //	print_hello();
 //	keyword_static();
 //	keyword_sizeof_test();
-	keyword_unsigned_test();
+//	keyword_unsigned_test();
+	keyword_ifelse_test();
 
 	return 0;
 }
