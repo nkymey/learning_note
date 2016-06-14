@@ -6,6 +6,7 @@
 #include "1.5.2_keyword_sizeof.h"
 #include "1.6.0_keyword_ifelse.h"
 #include "1.15.0_keyword_union.h"
+#include "1.17.0_keyword_typedef.h"
 
 int main(void)
 {
@@ -15,7 +16,8 @@ int main(void)
 //	keyword_sizeof_test();
 //	keyword_unsigned_test();
 //	keyword_ifelse_test();
-	keyword_union_test();
+//	keyword_union_test();
+	keyword_typedef_test();
 
 	return 0;
 }

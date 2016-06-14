@@ -3,3 +3,4 @@
 app_test
 *.exe
 *~
+.ycm_extra_conf.*
