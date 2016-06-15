@@ -7,6 +7,7 @@
 #include "1.6.0_keyword_ifelse.h"
 #include "1.15.0_keyword_union.h"
 #include "1.17.0_keyword_typedef.h"
+#include "2.5.2_keyword_symbol.h"
 
 int main(void)
 {
@@ -17,7 +18,8 @@ int main(void)
 //	keyword_unsigned_test();
 //	keyword_ifelse_test();
 //	keyword_union_test();
-	keyword_typedef_test();
+//	keyword_typedef_test();
+	keyword_symbol_test();
 
 	return 0;
 }
