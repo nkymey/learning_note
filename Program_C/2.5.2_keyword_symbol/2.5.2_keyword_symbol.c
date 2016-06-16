@@ -18,6 +18,8 @@ void keyword_symbol_test(void)
 	k = (i+++i+++i++);
 	lk_print("k= (i+++i+++i++) = %d.\n", k);
 	lk_print("i = %d.\n", i);
+	k = (++i+(++i)+(++i));
+	lk_print("k= (++i+++i+++i) = %d.\n", k);
 	k = ((i++)+(i++)+(i++));
 	lk_print("k= ((i++)+(i++)+(i++)) = %d.\n", k);
 	lk_print("i = %d.\n", i);
@@ -25,4 +27,8 @@ void keyword_symbol_test(void)
 	lk_print("k= (++i)+(++i)+(++i) = %d.\n", k);
 	lk_print("i= %d, j = %d.\n", i, j);
 	lk_print("i+++j = %d.\n", i+++j);
+//	lk_print("i= %d, j = %d.\n", i, j);
+//	lk_print("i+++++j = %d.\n", i+++++j);
+	/* 2.8 */
+	lk_print("3/-2 = %d, 3%(-2) = %d, (-3)/2 = %d, (-3)%2 = %d.\n", 3/(-2), 3%(-2), (-3)/2, (-3)%2);
 }
