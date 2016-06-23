@@ -15,7 +15,7 @@
 int main(void)
 {
 	lk_print("This's the main entry!\n");
-//	print_hello();
+	print_hello();
 //	keyword_static();
 //	keyword_sizeof_test();
 //	keyword_unsigned_test();
@@ -24,7 +24,7 @@ int main(void)
 //	keyword_typedef_test();
 //	keyword_symbol_test();
 	//preprocess_undef_test();
-	preprocess_memAlign_test();
+	//preprocess_memAlign_test();
 
 	return 0;
 }
