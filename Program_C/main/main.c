@@ -10,6 +10,7 @@
 #include "2.5.2_keyword_symbol.h"
 #include "3.1.6_preprocess_undef.h"
 #include "3.6.8_preprocess_memAlign.h"
+#include "4.1.3_cpointer.h"
 
 
 int main(void)
@@ -20,11 +21,12 @@ int main(void)
 //	keyword_sizeof_test();
 //	keyword_unsigned_test();
 //	keyword_ifelse_test();
-//	keyword_union_test();
+	keyword_union_test();
 //	keyword_typedef_test();
 //	keyword_symbol_test();
 	//preprocess_undef_test();
-	preprocess_memAlign_test();
+	//preprocess_memAlign_test();
+	cpointer_test();
 
 	return 0;
 }
