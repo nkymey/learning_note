@@ -12,6 +12,7 @@
 #include "3.6.8_preprocess_memAlign.h"
 #include "4.1.3_cpointer.h"
 #include "4.6.1_array_pointer.h"
+#include "4.7.2_pointer_fun.h"
 
 
 int main(void)
@@ -28,7 +29,8 @@ int main(void)
 	//preprocess_undef_test();
 	//preprocess_memAlign_test();
 	//cpointer_test();
-	array_pointer_test();
+//	array_pointer_test();
+	pointer_fun_test();
 
 	return 0;
 }
