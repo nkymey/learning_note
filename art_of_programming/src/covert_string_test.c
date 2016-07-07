@@ -3,7 +3,7 @@
 #include "lk_debug.h"
 #include "test_api.h"
 
-static void convert_string(char* str, unsigned long begin, unsigned long end)
+void convert_string(char* str, unsigned long begin, unsigned long end)
 {
 	unsigned long i;
 	char temp;
@@ -28,20 +28,25 @@ void convert_string_test(char *str, long num)
 		num = (-num) % strlen(str);
 		num = strlen(str) - num;
 	}
-	else
+	else if(num > 0)
 	{
 		num = num % strlen(str);
+	}
+	if(num == 0)
+	{
+		lk_print("str0:%s\n", str);
+		return;
 	}
 	_ASSERT((num < 0));
 
 	//lk_print("string len: %ld, num: %ld.\n", strlen(str), num);
 	convert_string(str, 0, strlen(str) - 1);
-	lk_print("str1:%s.\n", str);
+	lk_print("str1:%s\n", str);
 
 	convert_string(str, 0, strlen(str) - 1 - num);
-	lk_print("str2:%s.\n", str);
+	lk_print("str2:%s\n", str);
 
 	convert_string(str, strlen(str) - num, strlen(str) - 1);
-	lk_print("str3:%s.\n", str);
+	lk_print("str3:%s\n", str);
 }
 

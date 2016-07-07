@@ -45,7 +45,7 @@ void printDLink(DlinkedList_Node *head)
 	printf("正序输出双向链表：\n");
 	while(p)
 	{
-		printf("%2c",p->data);
+		printf("%c",p->data);
 		s = p;
 		p = p->next;
 	}
@@ -53,7 +53,7 @@ void printDLink(DlinkedList_Node *head)
 	printf("\n逆序输出双向链表：\n");
 	while(s)
 	{
-		printf("%2c",s->data);
+		printf("%c",s->data);
 		s = s->pre;
 	}
 	printf("\n\n");
@@ -135,10 +135,16 @@ void convert_string_use_listnode_test(char *str, long num)
 		num = (-num) % strlen(str);
 		num = strlen(str) - num;
 	}
-	else
+	else if(num > 0)
 	{
 		num = num % strlen(str);
 	}
+	if(num == 0)
+	{
+		printDLink(head);
+		return;
+	}
+
 	_ASSERT((num < 0));
 	p = head;
 	while((head != NULL) && (num > 0))
