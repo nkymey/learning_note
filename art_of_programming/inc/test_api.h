@@ -5,6 +5,7 @@ void convert_string(char* str, unsigned long begin, unsigned long end);
 void convert_string_test(char *str, long num);
 void convert_string_use_listnode_test(char *str, long num);
 void words_flip_test(char *str);
+void flip_number_use_listnode_test(int *array_num, long len, long num);
 
 
 #endif
